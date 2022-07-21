@@ -1,0 +1,31 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+public class Test_POST {
+	
+	
+	@Test
+	public void Test_1_Post() {
+		
+//		Map<String,Object> map = new HashMap<String ,Object>(); 
+//		map.put("name", "sonu sharma");
+//		map.put("job", "Devloper");
+//		System.out.println(map);
+		
+		//JSONObject request= new JSONObject(map);
+		JSONObject request= new JSONObject();
+		
+		request.put("name", "sonu sharma");
+		request.put("job", "Devloper");
+		
+		System.out.println(request);
+		
+		System.out.println(request.toJSONString());
+		
+		
+	}
+
+}
